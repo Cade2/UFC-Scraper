@@ -1,0 +1,18 @@
+# Configuration for UFC scraper
+
+# HTTP headers for requests
+headers:
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+
+# Retry settings
+retries: 3  # Number of retries for failed requests
+sleep_range: [1, 3]  # Randomized sleep range in seconds (min, max)
+
+# Output file names
+fighter_details_file_name: "fighter_details.csv"  # File to save basic fighter details
+fighter_stats_file_name: "fighter_tott.csv"      # File to save fighter stats
+
+# Columns for the CSV outputs
+columns:
+  fighter_details: ["FIRST", "LAST", "NICKNAME", "URL"]  # Columns for fighter details
+  fighter_tott: ["FIGHTER", "HEIGHT", "WEIGHT", "REACH", "STANCE", "DOB", "UFC_URL", "TAPOLOGY_URL", "MMADECISIONS_URL"]
