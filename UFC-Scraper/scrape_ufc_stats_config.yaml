@@ -1,5 +1,7 @@
 # urls to parse
 completed_events_all_url: http://ufcstats.com/statistics/events/completed?page=all
+upcoming_events_ufcstats_url: http://ufcstats.com/statistics/events/upcoming
+upcoming_events_ufc_url: https://www.ufc.com/events#events-list-upcoming
 
 # file names for parsed data
 event_details_file_name: ufc_event_details.csv
@@ -8,6 +10,13 @@ fight_results_file_name: ufc_fight_results.csv
 fight_stats_file_name: ufc_fight_stats.csv
 fighter_details_file_name: ufc_fighter_details.csv
 fighter_tott_file_name: ufc_fighter_tott.csv
+scraped_progress_file: datasets/scraped_progress.csv
+
+# Upcoming fight scrapers output
+upcoming_events_ufcstats_file: datasets/upcoming_events_ufcstats.csv
+upcoming_fights_ufcstats_file: datasets/upcoming_fights_ufcstats.csv
+upcoming_events_ufc_file: datasets/upcoming_events_ufc.csv
+upcoming_fights_ufc_file: datasets/upcoming_fights_ufc.csv
 
 # columns names for extracted details
 fight_details_column_names:
@@ -94,3 +103,74 @@ fighter_tott_column_names:
   - STANCE
   - DOB
   - URL
+
+# Columns for upcoming events (UFCStats)
+upcoming_events_ufcstats_columns:
+  - EVENT
+  - DATE
+  - LOCATION
+  - URL
+
+# Columns for upcoming fights (UFCStats)
+upcoming_fights_ufcstats_columns:
+  - EVENT
+  - DATE
+  - LOCATION
+  - BOUT
+  - FIGHTER_A
+  - FIGHTER_B
+  - WINS/LOSSES/DRAWS
+  - AVERAGE FIGHT TIME
+  - HEIGHT
+  - WEIGHT
+  - REACH
+  - STANCE
+  - DOB
+  - STRIKES LANDED PER MIN. (SLpM)
+  - STRIKING ACCURACY
+  - STRIKES ABSORBED PER MIN. (SApM)
+  - DEFENSE
+  - TAKEDOWNS AVG/15 MIN
+  - TAKEDOWN ACCURACY
+  - TAKEDOWN DEFENSE
+  - SUBMISSION AVG/15 MIN
+  - LAST 5 FIGHTS
+
+# Columns for upcoming events (UFC.com)
+upcoming_events_ufc_columns:
+  - EVENT
+  - DATE
+  - LOCATION
+  - URL
+
+# Columns for upcoming fights (UFC.com)
+upcoming_fights_ufc_columns:
+  - EVENT
+  - DATE
+  - LOCATION
+  - BOUT
+  - RECORD
+  - COUNTRY
+  - HEIGHT
+  - WEIGHT
+  - REACH
+  - LEG REACH
+  - KO/TKO %
+  - SUBMISSION %
+  - DECISION %
+  - AVERAGE FIGHT TIME
+  - KNOCKDOWN AVG/15 MIN
+  - LANDED PER MIN
+  - SIGNIFICANT STRIKES
+  - ABSORBED PER MIN
+  - DEFENSE
+  - TAKEDOWN AVG/15 MIN
+  - TAKEDOWN ACCURACY
+  - TAKEDOWN DEFENSE
+  - SUBMISSION AVG/15 MIN
+  - ODDS
+  - MONEY LINE
+  - TOTAL ROUNDS
+  - ODDS TO WIN BY KO
+  - ODDS TO WIN BY SUBMISSION
+  - ODDS TO WIN BY DECISION
